@@ -1,4 +1,4 @@
-# Calcular ÁREA
+# Calcular área
 
 Projeto destinado ao portfólio.
 
