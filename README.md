@@ -1,6 +1,6 @@
 # Calcular área
 
-Projeto destinado ao portfólio.
+Projetinho destinado ao portfólio.
 
-Vejá agora 👇
+Veja agora 👇
 https://vitin286.github.io/calcular-area/
