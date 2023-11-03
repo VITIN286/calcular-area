@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <title>Calculando a área</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;   
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        h1{
+            font-size: 25px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.192);
+        }
+
+        h2{
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgba(86, 86, 192, 0.11);
+        }
+
+        footer{
+            margin-top: 140px;
+        }
+
+        footer>p{
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .lista>img{
+            width: 30px;
+            margin-bottom: 5px;
+            margin: 10px;
+        }
+
+        .texto{
+            margin: 20px;
+        }
+
+        .calc{
+            margin: 20px;
+            border: solid 1px;
+            padding-top: 120px;
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.116);
+        }
+        
+
+        .calc>button{
+            margin: 10px;
+            font-size: 18px;
+            padding-left: 5px;
+            padding-right: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular a área de uma circunferência</h1>
+        <h2>Como calcular?</h2>
+        <div class="texto">
+            <p>Para calcularmos a área de uma circunferência precisamos primeiramente do valor do Raio, depois precisamos do diâmetro, para isso o Raio será multiplicado 2 vezes o valor dele mesmo exemplo "<b>Raio * Raio</b>" logo em seguida vamos multiplicar o valor do "<b>diametro * PI 3,14</b>", assim chegaremos ao resultado que é a nossa área.</p>
+        </div>
+        <h2>Calculadora</h2>
+        <div class="calc">
+            Coloque o valor do seu Raio:<br>
+            <input type="number" name="raio" id="n1"> <button onclick="multiplicar()">Calcular</button><br>
+            Valor do diametro: <span id="n2"></span><br>
+            Aréa: <span id="n3"></span>
+            <footer>
+        </div>
+      <p>Projetinho destinado ao portifolio:</p>
+      <div class="lista">
+          <img src="icon/html-5.png" alt="HTML">
+          <img src="icon/css-3.png" alt="CSS">
+          <img src="icon/js.png" alt="JS">
+      </div>
+        </footer>
+    </div>
+    <script>
+        const PI = 3.14
+        let raio = document.querySelector('#n1')
+        let diametro = document.querySelector('#n2')
+        let area = document.querySelector('#n3')
+        
+        function multiplicar(){
+            diametro.innerHTML = parseFloat(n1.value) * parseFloat(n1.value)
+
+            area.innerHTML = parseFloat(n1.value) * parseFloat(n1.value) * parseFloat(PI) + (" m²")
+        }
+    </script>
+</body>
+</html>
